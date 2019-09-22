@@ -23,7 +23,7 @@ data_file=open("birthdays.json","r")
 # print(datt.month,datt.day)
 namev=[]
 while True:
-    print("here")
+    #print("here")
     try:
         namev=getJsonData(data_file,"name","birth_month","birth_date",str(datt.month),str(datt.day))
     except json.decoder.JSONDecodeError:

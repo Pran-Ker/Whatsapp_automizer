@@ -1,0 +1,5 @@
+The following are necessary to run the program:
+1)Python3
+2)PySelenium
+3)Chrome webdriver(to run the code as default,otherwise you can change the driver in the code)
+4)Json

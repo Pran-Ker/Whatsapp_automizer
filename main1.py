@@ -20,9 +20,16 @@ def getJsonData(file,attr_ret,attr1,attr2,attr_val1,attr_val2):
 datt=datetime.datetime.now()
 
 data_file=open("birthdays.json","r")
-print(datt.month,datt.day)
-namev=getJsonData(data_file,"name","birth_month","birth_date",str(datt.month),str(datt.day))
-
+# print(datt.month,datt.day)
+namev=[]
+while True:
+    print("here")
+    try:
+        namev=getJsonData(data_file,"name","birth_month","birth_date",str(datt.month),str(datt.day))
+    except json.decoder.JSONDecodeError:
+        continue
+    if(namev!=[]):
+        break
 chropt=webdriver.ChromeOptions()
 
 chropt.add_argument("user-data-dir=C:\\Users\\mohit\\AppData\\Local\\Google\\Chrome\\User Data")

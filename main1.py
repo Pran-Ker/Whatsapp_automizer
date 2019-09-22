@@ -32,9 +32,9 @@ while True:
         break
 chropt=webdriver.ChromeOptions()
 
-chropt.add_argument("user-data-dir=C:\\Users\\mohit\\AppData\\Local\\Google\\Chrome\\User Data")
+chropt.add_argument("user-data-dir=<***USER DATA DESTINATION GOES HERE***>")
 
-driver=webdriver.Chrome(executable_path="D:\\Chrome webdrv\\chromedriver.exe",options=chropt)
+driver=webdriver.Chrome(executable_path="<***WEB DRIVER PATH HERE***",options=chropt)
 driver.get("https://web.whatsapp.com/")
 time.sleep(3)
 print(namev)
